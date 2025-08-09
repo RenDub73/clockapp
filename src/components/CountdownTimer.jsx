@@ -12,8 +12,12 @@ const CountdownTimer = () => {
   // Preload audio files
   useEffect(() => {
     for (let i = 1; i <= 10; i++) {
-      audioRefs.current[i] = new Audio(`/src/assets/countdown-${i}.wav`);
+      audioRefs.current[i] = new Audio(`/assets/countdown-${i}.wav`);
       audioRefs.current[i].preload = 'auto';
+      // Add error handling for audio loading
+      audioRefs.current[i].addEventListener('error', (e) => {
+        console.log(`Failed to load audio file: countdown-${i}.wav`, e);
+      });
     }
   }, []);
 
