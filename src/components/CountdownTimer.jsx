@@ -96,22 +96,27 @@ const CountdownTimer = () => {
   return (
     <div className="flex flex-col items-center justify-center p-8">
       {/* Timer display */}
-      <div className="glass-morphism rounded-3xl p-8 mb-8 floating">
-        <div className="flex flex-col items-center">
-          <div className="flex items-center gap-3 mb-4">
-            <Timer className="w-8 h-8 text-primary animate-pulse" />
-            <h2 className="text-2xl font-bold gradient-text">Countdown Timer</h2>
-          </div>
-          
-          <div className={getTimerClasses()}>
-            {formatTime(timeLeft)}
-          </div>
-          
-          {timeLeft <= 3 && timeLeft > 0 && isRunning && (
-            <div className="text-lg font-bold text-red-400 mt-2 animate-pulse">
-              GET READY!
+      <div className="relative">
+        {/* Glowing border */}
+        <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 opacity-40 blur-lg scale-105 glowing"></div>
+        
+        <div className="relative glass-morphism rounded-3xl p-8 mb-8">
+          <div className="flex flex-col items-center">
+            <div className="flex items-center gap-3 mb-4">
+              <Timer className="w-8 h-8 text-primary animate-pulse" />
+              <h2 className="text-2xl font-bold gradient-text">Countdown Timer</h2>
             </div>
-          )}
+            
+            <div className={getTimerClasses()}>
+              {formatTime(timeLeft)}
+            </div>
+            
+            {timeLeft <= 3 && timeLeft > 0 && isRunning && (
+              <div className="text-lg font-bold text-red-400 mt-2 animate-pulse">
+                GET READY!
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

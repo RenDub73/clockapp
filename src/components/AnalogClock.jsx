@@ -89,8 +89,8 @@ const AnalogClock = ({ timezone = 'UTC' }) => {
   return (
     <div className="flex flex-col items-center justify-center p-8">
       <div className="relative">
-        {/* Outer glow ring */}
-        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 opacity-20 blur-xl scale-110 animate-pulse"></div>
+        {/* Pulsing glow background */}
+        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 opacity-30 blur-2xl scale-125 pulse-glow"></div>
         
         {/* Clock container */}
         <div className="relative glass-morphism rounded-full p-4">
