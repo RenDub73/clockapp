@@ -196,3 +196,8 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+html.dark, body.dark {
+  background-color: #000000 !important;
+}
+
