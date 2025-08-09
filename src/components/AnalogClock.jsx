@@ -145,7 +145,7 @@ const AnalogClock = ({ timezone = 'UTC' }) => {
             
             {/* Hour numbers with glow */}
             {[12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((num, i) => {
-              const angle = (i * 30) * (Math.PI / 180);
+              const angle = ((i - 3) * 30) * (Math.PI / 180); // Subtract 3 to move 12 to top
               const x = 150 + Math.cos(angle) * 95;
               const y = 150 + Math.sin(angle) * 95;
               return (
