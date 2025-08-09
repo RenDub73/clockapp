@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button.jsx';
 import { Clock, Watch, Sun, Moon } from 'lucide-react';
 import DigitalClock from './components/DigitalClock';
@@ -11,6 +11,17 @@ function App() {
   const [isDigital, setIsDigital] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [selectedTimezone, setSelectedTimezone] = useState('UTC');
+
+  useEffect(() => {
+    // Apply dark/light class to document body for full page background
+    if (isDarkMode) {
+      document.body.classList.add('dark');
+      document.documentElement.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDarkMode]);
 
   const toggleClockType = () => {
     setIsDigital(!isDigital);
