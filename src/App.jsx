@@ -29,7 +29,7 @@ function App() {
       <div className="min-h-screen relative overflow-hidden">
         <div className="relative z-10 container mx-auto px-4 py-8">
           {/* Header with controls */}
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-20 gap-10">
+          <div className="flex flex-col sm:flex-row justify-between items-center mb-32 gap-10">
             <div className="text-center sm:text-left">
               <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
                 Digital & Analog Clock
