@@ -29,9 +29,9 @@ function App() {
       <div className="min-h-screen relative overflow-hidden">
         <div className="relative z-10 container mx-auto px-4 py-8">
           {/* Header with controls */}
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-12 gap-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center mb-16 gap-8">
             <div className="text-center sm:text-left">
-              <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-2">
+              <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
                 Digital & Analog Clock
               </h1>
               <p className="text-lg opacity-80">
@@ -124,7 +124,19 @@ function App() {
           </div>
 
           {/* Footer */}
-          <div className="flex justify-center mt-12">
+          <div className="flex flex-col items-center mt-12 gap-6">
+            {/* AdSense */}
+            <div style={{ margin: "30px 0" }}>
+              <ins
+                className="adsbygoogle"
+                style={{ display: "block" }}
+                data-ad-client="ca-pub-7817395457584126"
+                data-ad-slot="6362211799"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              />
+            </div>
+            
             <div className="glass-morphism rounded-xl px-4 py-2 pulse-glow">
               <div className="text-sm font-medium opacity-80">
                 ✨ Stunning clock with all features complete!
