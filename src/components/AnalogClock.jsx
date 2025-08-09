@@ -174,7 +174,6 @@ const AnalogClock = ({ timezone = 'UTC' }) => {
               strokeWidth="8"
               strokeLinecap="round"
               className="text-primary"
-              filter="url(#glow)"
               style={{
                 transition: 'all 0.5s ease-in-out'
               }}
@@ -190,7 +189,6 @@ const AnalogClock = ({ timezone = 'UTC' }) => {
               strokeWidth="6"
               strokeLinecap="round"
               className="text-primary"
-              filter="url(#glow)"
               style={{
                 transition: 'all 0.5s ease-in-out'
               }}
@@ -205,7 +203,6 @@ const AnalogClock = ({ timezone = 'UTC' }) => {
               stroke="#ff6b6b"
               strokeWidth="3"
               strokeLinecap="round"
-              filter="url(#glow)"
               style={{
                 transition: seconds === 0 ? 'none' : 'all 0.1s ease-out'
               }}

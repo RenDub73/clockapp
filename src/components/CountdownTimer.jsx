@@ -98,7 +98,7 @@ const CountdownTimer = () => {
       {/* Timer display */}
       <div className="relative">
         {/* Glowing border */}
-        <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 opacity-40 blur-lg scale-105 glowing"></div>
+        <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 opacity-40 blur-lg scale-105 pulse-glow"></div>
         
         <div className="relative glass-morphism rounded-3xl p-8 mb-8">
           <div className="flex flex-col items-center">
