@@ -31,7 +31,7 @@ function App() {
           {/* Header with controls */}
           <div className="flex flex-col sm:flex-row justify-between items-center mb-12 gap-6">
             <div className="text-center sm:text-left">
-              <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-2 floating">
+              <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-2">
                 Digital & Analog Clock
               </h1>
               <p className="text-lg opacity-80">
@@ -104,19 +104,19 @@ function App() {
 
           {/* Feature cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="glass-morphism rounded-2xl p-6 text-center floating" style={{ animationDelay: '0.2s' }}>
+            <div className="glass-morphism rounded-2xl p-6 text-center" style={{ animationDelay: '0.2s' }}>
               <div className="text-2xl mb-3">🌍</div>
               <h3 className="font-semibold mb-2">Timezone Selection</h3>
               <p className="text-sm opacity-70">Choose from worldwide timezones</p>
             </div>
             
-            <div className="glass-morphism rounded-2xl p-6 text-center floating" style={{ animationDelay: '0.4s' }}>
+            <div className="glass-morphism rounded-2xl p-6 text-center" style={{ animationDelay: '0.4s' }}>
               <div className="text-2xl mb-3">⏱️</div>
               <h3 className="font-semibold mb-2">Countdown Timer</h3>
               <p className="text-sm opacity-70">With voice countdown feature</p>
             </div>
             
-            <div className="glass-morphism rounded-2xl p-6 text-center floating" style={{ animationDelay: '0.6s' }}>
+            <div className="glass-morphism rounded-2xl p-6 text-center" style={{ animationDelay: '0.6s' }}>
               <div className="text-2xl mb-3">✨</div>
               <h3 className="font-semibold mb-2">Visual Effects</h3>
               <p className="text-sm opacity-70">Stunning animations and transitions</p>
