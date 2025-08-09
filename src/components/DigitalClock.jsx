@@ -36,19 +36,14 @@ const DigitalClock = ({ timezone = 'UTC' }) => {
 
   return (
     <div className="flex flex-col items-center justify-center p-8">
-      {/* Main clock display */}
-      <div className="relative">
-        {/* Pulsing glow background */}
-        <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 opacity-30 blur-2xl scale-125 pulse-glow"></div>
-        
-        <div className="relative glass-morphism rounded-3xl p-8 mb-6">
-          <div className="flex items-center justify-center space-x-2 text-6xl md:text-8xl font-mono font-bold">
-            <span className="gradient-text">{hours}</span>
-            <span className="text-foreground animate-pulse opacity-80">:</span>
-            <span className="gradient-text">{minutes}</span>
-            <span className="text-foreground animate-pulse opacity-80">:</span>
-            <span className="gradient-text">{seconds}</span>
-          </div>
+      {/* Main clock display with subtle glow like bottom text */}
+      <div className="glass-morphism rounded-3xl p-8 mb-6 pulse-glow">
+        <div className="flex items-center justify-center space-x-2 text-6xl md:text-8xl font-mono font-bold">
+          <span className="gradient-text">{hours}</span>
+          <span className="text-foreground animate-pulse opacity-80">:</span>
+          <span className="gradient-text">{minutes}</span>
+          <span className="text-foreground animate-pulse opacity-80">:</span>
+          <span className="gradient-text">{seconds}</span>
         </div>
       </div>
 
